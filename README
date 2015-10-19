@@ -1,0 +1,17 @@
+This is a random password generation application that I wrote in java
+
+There are 2 java files, one is the Command Line Interface, whose usage is shown below, and a Graphical Interface which is easy to use
+
+Usage:
+	java PasswordGenerator <length> <rules>
+
+Where <length> is the length of the password, and rules are as follows:
+a -> include lowercase characters in password
+A -> include uppercase characters in password
+d -> include numbers in password
+x -> include special characters in password
+
+example:
+	java PasswordGenerator 15 aAd
+
+Generates a 15 character long password that contains lowercase, uppercase characters and digits in it
