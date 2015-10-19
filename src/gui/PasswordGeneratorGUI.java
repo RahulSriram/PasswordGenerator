@@ -1,6 +1,9 @@
-import java.io.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import javax.swing.JFileChooser;
 import java.util.Random;
+import java.awt.Desktop;
 
 /**
  * @author rahul
@@ -177,6 +180,15 @@ public class PasswordGeneratorGUI extends javax.swing.JFrame {
 				notifier.setForeground(new java.awt.Color(255, 0, 0));
 				notifier.setText("Error saving file in directory");
 			}
+			
+			Desktop dt = Desktop.getDesktop();
+			
+			try {
+				dt.open(file);
+			}catch(IOException e) {
+				notifier.setForeground(new java.awt.Color(255, 0, 0));
+				notifier.setText("Error opening file");
+			}
 		}
 	}
 	
@@ -228,5 +240,4 @@ public class PasswordGeneratorGUI extends javax.swing.JFrame {
     private javax.swing.JCheckBox special;
     private javax.swing.JLabel title;
     private javax.swing.JCheckBox uppercase;
-    // End of variables declaration//GEN-END:variables
 }
