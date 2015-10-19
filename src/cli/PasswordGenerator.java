@@ -44,7 +44,7 @@ public class PasswordGenerator
 	
 	static void errorPrinter()
 	{
-		System.out.println("Invalid argument(s)\nUsage:\n\tjava passwordgenerator <length> <rules>\n\nWhere <length> is the length of the password, and rules are as follows:\na -> include lowercase characters in password\nA -> include uppercase characters in password\nd -> include numbers in password\nx -> include special characters in password\n\nexample:\n\tjava passwordgenerator 15 aAd\n\nGenerates a 15 character long password that contains lowercase, uppercase characters and digits in it\n");
+		System.out.println("Invalid argument(s)\nUsage:\n\tjava PasswordGenerator <length> <rules>\n\nWhere <length> is the length of the password, and rules are as follows:\na -> include lowercase characters in password\nA -> include uppercase characters in password\nd -> include numbers in password\nx -> include special characters in password\n\nexample:\n\tjava PasswordGenerator 15 aAd\n\nGenerates a 15 character long password that contains lowercase, uppercase characters and digits in it\n");
 	}
 
 	static String shuffle(String array)
