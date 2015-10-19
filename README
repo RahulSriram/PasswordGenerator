@@ -1,6 +1,6 @@
 This is a random password generation application that I wrote in java
 
-There are 2 java files, one is the Command Line Interface, whose usage is shown below, and a Graphical Interface which is easy to use
+The source consists of a Graphical Interface which is easy to use, and a Command Line Interface, whose usage is shown below,
 
 Usage:
 	java PasswordGenerator <length> <rules>
